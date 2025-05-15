@@ -1,0 +1,178 @@
+[
+  {
+    "crop": "korra",
+    "short_note": "Korra, also known as foxtail millet, grows well in semi-arid regions with 24–32°C temperature.\nRequires well-drained loamy or sandy loam soils with pH 5.5–7.5.",
+    "land_preparation": "Plow the field 2–3 times to achieve fine tilth.\nApply FYM or compost (5–6 tons/acre) during last plowing.\nUse seed rate of 8–10 kg/acre.\nSpacing: 25 cm between rows and 10 cm between plants.\nBest sowing time: June to July (rainfed) or Sept–Oct (irrigated areas).",
+    "irrigation": "Usually grown under rainfed conditions.\nIf irrigated, give light irrigation during flowering and grain filling stages.\nAvoid water stagnation.",
+    "fertilization": "Apply basal dose of NPK (40:20:20 kg/ha).\nTop-dress nitrogen (20 kg/ha) at 25–30 days after sowing.\nIncorporate organic manure to enhance soil fertility.",
+    "pests_diseases": "Pests: Stem borer, shoot fly – manage with neem-based insecticides.\nDiseases: Blast, rust – treat with fungicides and use disease-resistant varieties.",
+    "investment": "Low input crop with minimal investment.\nDuration: 75–90 days from sowing to harvest.",
+    "yield": "Yield ranges from 6–10 quintals per acre under proper management.",
+    "profit": "Market price: ₹35 – ₹60 per kg.\nGross returns: ₹21,000 – ₹60,000 per acre.\nNet profit: ₹15,000 – ₹50,000 per acre depending on practices."
+  },
+  {
+    "crop": "sweet corn",
+    "short_note": "Sweet corn thrives in warm climates with temperatures between 20–30°C. It requires well-drained, fertile soils with a pH of 6.0–6.8.",
+    "land_preparation": "Plow the land to a fine tilth and incorporate organic manure (8–10 tons/acre) to improve soil fertility. Spacing: 30–40 cm between plants and 60–75 cm between rows.",
+    "irrigation": "Sweet corn requires regular irrigation, particularly during flowering and cob formation stages. Drip irrigation is ideal for better yield.",
+    "fertilization": "Apply NPK (120:60:60 g/plant) at planting time. Top-dress with nitrogen (30–40 g/plant) during the growing season.",
+    "pests_diseases": "Pests: Corn borer, aphids, armyworms. Diseases: Corn rust, leaf spot.",
+    "investment": "Moderate investment. Harvest occurs 2–3 months after planting.",
+    "yield": "Yield: 8–12 tons per acre, depending on variety and growing conditions.",
+    "profit": "Average price: ₹20 – ₹50 per kg. Gross returns: ₹1,60,000 – ₹6,00,000 per acre. Net profit: ₹1,00,000 – ₹4,00,000 per acre."
+  },
+  {
+    "crop": "samai",
+    "short_note": "Samai, or little millet, is a hardy crop suited for semi-arid and upland regions.\nIt grows well in well-drained sandy loam to loamy soils with pH 5.5–7.5 and temperature range of 25–35°C.",
+    "land_preparation": "Plow the land 2–3 times to obtain fine tilth.\nApply FYM or compost at 5 tons/acre before the last plowing.\nSeed rate: 8–10 kg/acre.\nSpacing: 22.5 cm between rows and 10 cm between plants.\nSowing season: June–July (rainfed) and September–October (irrigated).",
+    "irrigation": "Grown mostly under rainfed conditions.\nIf irrigated, provide light irrigation during flowering and grain filling stages.\nAvoid excess moisture and waterlogging.",
+    "fertilization": "Apply NPK at 40:20:20 kg/ha as basal.\nTop dressing of 20 kg nitrogen per hectare at 30 days after sowing.\nUse organic manure to improve yield sustainably.",
+    "pests_diseases": "Pests: Shoot fly, stem borer – controlled by neem extracts or mild insecticides.\nDiseases: Rust, smut – treat with fungicides and follow crop rotation.",
+    "investment": "Low input cost crop with minimal maintenance.\nCrop duration: 80–90 days from sowing to harvest.",
+    "yield": "Average yield is 6–8 quintals per acre under good conditions.",
+    "profit": "Market price: ₹35 – ₹60 per kg.\nGross returns: ₹21,000 – ₹48,000 per acre.\nNet profit: ₹15,000 – ₹40,000 per acre depending on inputs and market rate."
+  },
+  {
+    "crop": "bontha",
+    "short_note": "Bontha, also known as Kodo millet, is a drought-resistant crop grown in semi-arid regions.\nIt thrives in well-drained sandy loam or clay loam soils with pH 5.5–7.5, and temperatures between 25–35°C.",
+    "land_preparation": "Plow the field 2–3 times to achieve fine tilth.\nIncorporate 5 tons of FYM or compost per acre before the last plowing.\nSeed rate: 8–10 kg/acre.\nSpacing: 25 cm between rows and 10 cm between plants.\nBest sowing time: June–July (rainfed) or September–October (irrigated).",
+    "irrigation": "Generally grown under rainfed conditions.\nIf irrigated, light irrigation is required during flowering and grain filling stages.\nAvoid water stagnation.",
+    "fertilization": "Apply NPK (40:20:20 kg/ha) as basal fertilizer.\nTop-dress with nitrogen (20 kg/ha) 30–35 days after sowing.\nIncorporate organic manure to maintain soil health.",
+    "pests_diseases": "Pests: Stem borer, shoot fly – managed by using neem-based insecticides or bio-pesticides.\nDiseases: Leaf spot, rust – treated with fungicides and resistant varieties.",
+    "investment": "Low-cost crop with minimal maintenance.\nDuration: 75–90 days from sowing to harvest.",
+    "yield": "Average yield: 5–8 quintals per acre, depending on soil conditions and management.",
+    "profit": "Market price: ₹40 – ₹70 per kg.\nGross returns: ₹20,000 – ₹56,000 per acre.\nNet profit: ₹15,000 – ₹50,000 per acre depending on practices and market conditions."
+  },
+  {
+    "crop": "acid lime",
+    "short_note": "Acid lime, or kinnow, thrives in tropical and subtropical climates with temperatures ranging from 25–30°C.\nIt requires well-drained, slightly acidic to neutral soils with pH 6–7.",
+    "land_preparation": "Plow the land 2–3 times to break clods and achieve fine tilth.\nApply well-decomposed organic manure (10–12 tons/acre) before planting.\nSpacing: 5–6 meters between trees, with 3–4 meters within rows.\nPlanting season: June–July or August–September.",
+    "irrigation": "Regular irrigation required, especially during dry periods.\nDrip irrigation is recommended for better water efficiency and yield.",
+    "fertilization": "Apply NPK (100:50:100 g/tree) as basal dose.\nTop-dress with nitrogen (30–40 g/tree) during flowering and fruit setting.\nMicronutrients like Zinc and Boron help improve fruit size and quality.",
+    "pests_diseases": "Pests: Fruit flies, scale insects – controlled by using organic insecticides or neem oil.\nDiseases: Citrus canker, leaf spot – treated with fungicides and ensuring good orchard sanitation.",
+    "investment": "Medium to high investment in land preparation, irrigation system, and care.\nFirst harvest typically occurs 2–3 years after planting.\nDuration: 2–3 years for initial fruiting, continuous harvest after that.",
+    "yield": "Yield: 15–25 tons per acre depending on tree age, variety, and management practices.",
+    "profit": "Average price: ₹15 – ₹25 per kg.\nGross returns: ₹2,25,000 – ₹6,25,000 per acre.\nNet profit: ₹1,50,000 – ₹5,00,000 per acre depending on orchard practices."
+  }, 
+  {
+  "crop": "grapes",
+  "short_note": "Grapes thrive in temperate and subtropical climates with temperatures ranging from 20–30°C.\nRequires well-drained loamy soils with pH 6.0–7.5.",
+  "land_preparation": "Plow the land 2–3 times and apply 10–12 tons of well-decomposed organic manure per acre.\nPrepare furrows with spacing of 2.5–3 meters between rows and 1.5 meters between plants.\nIdeal planting time: Early spring (February–March) or late autumn (October–November).",
+  "irrigation": "Grapes require moderate irrigation, ensuring the soil is moist but not waterlogged.\nDrip irrigation is ideal for water efficiency and fruit quality.\nAvoid over-irrigation to prevent root diseases.",
+  "fertilization": "Apply balanced NPK fertilizers (100:50:100 g/vine) during the growing season.\nTop-dress with nitrogen at 30–45 days after planting, and add potassium during fruit development for better yield.",
+  "pests_diseases": "Pests: Grapevine moth, aphids, mealybugs – controlled with organic insecticides and proper pest management practices.\nDiseases: Powdery mildew, downy mildew, botrytis – treated with fungicides and proper vineyard sanitation.",
+  "investment": "Initial investment in vines, trellis system, and irrigation setup.\nHarvest begins in 2–3 years after planting for early varieties.\nDuration: 3–4 years for first fruiting, continuous harvest thereafter.",
+  "yield": "Yield: 10–20 tons per acre depending on vine age, variety, and climatic conditions.",
+  "profit": "Average price: ₹30 – ₹80 per kg depending on variety and market.\nGross returns: ₹3,00,000 – ₹16,00,000 per acre.\nNet profit: ₹2,00,000 – ₹12,00,000 per acre based on market rates and management practices."
+},
+{
+  "crop": "custard apple",
+  "short_note": "Custard apple grows well in tropical and subtropical climates with temperatures between 25–35°C.\nIt prefers well-drained loamy soils with pH 6–7.5 and requires a dry period for fruit ripening.",
+  "land_preparation": "Plow the land 2–3 times and incorporate well-decomposed organic manure (10–12 tons/acre).\nSpacing: 5–6 meters between trees and 4–5 meters between rows.\nPlanting season: June–July or September–October for optimal growth.",
+  "irrigation": "Regular irrigation is essential, especially during the flowering and fruiting stages.\nDrip irrigation is ideal for better water management and fruit quality.",
+  "fertilization": "Apply NPK (100:50:100 g/tree) as a basal dose.\nTop-dress with nitrogen (30–40 g/tree) every 30–45 days during the growing season.\nMicronutrients such as Zinc and Boron are important for better fruit set and quality.",
+  "pests_diseases": "Pests: Fruit flies, mealybugs, scale insects – controlled by using organic insecticides or neem oil.\nDiseases: Anthracnose, powdery mildew – treat with fungicides and ensure good orchard management practices.",
+  "investment": "Medium investment for land preparation, irrigation system, and care.\nFirst harvest typically occurs 2–3 years after planting, with fruits ready in 3–4 months after flowering.\nDuration: 3–4 years for initial fruiting, with ongoing harvesting thereafter.",
+  "yield": "Yield: 8–12 tons per acre depending on tree age, variety, and growing conditions.",
+  "profit": "Average price: ₹50 – ₹120 per kg depending on market and quality.\nGross returns: ₹4,00,000 – ₹14,40,000 per acre.\nNet profit: ₹2,50,000 – ₹12,00,000 per acre based on market rates and management practices."
+},
+{
+  "crop": "dragon fruit",
+  "short_note": "Dragon fruit, or pitaya, is a tropical cactus species that thrives in warm climates with temperatures ranging from 25–35°C.\nIt requires well-drained sandy or loamy soils with a pH of 6.0–7.0.",
+  "land_preparation": "Prepare the land by plowing and leveling to ensure proper drainage.\nApply well-decomposed organic manure (10 tons/acre) before planting.\nSpacing: 2.5–3 meters between rows and 1.5–2 meters between plants.\nPlanting season: March–April or September–October.",
+  "irrigation": "Dragon fruit requires regular watering, especially during dry periods.\nDrip irrigation is ideal for water efficiency.\nAvoid waterlogging, as it can lead to root rot.",
+  "fertilization": "Apply balanced NPK (50:25:50 g/plant) as a basal dose.\nTop-dress with nitrogen (30 g/plant) every 6–8 weeks.\nUse organic compost to improve soil fertility and support plant growth.",
+  "pests_diseases": "Pests: Aphids, mealybugs, and spider mites – controlled by neem oil and other organic insecticides.\nDiseases: Fungal infections like rust and anthracnose – treat with fungicides and ensure good airflow around plants.",
+  "investment": "Moderate investment for land preparation, irrigation setup, and initial care.\nHarvest begins 1–2 years after planting, depending on the variety and growing conditions.\nDuration: 2–3 years for initial fruiting, with continuous harvesting thereafter.",
+  "yield": "Yield: 10–15 tons per acre, depending on variety, age of plants, and growing practices.",
+  "profit": "Average price: ₹80 – ₹200 per kg depending on market conditions and quality.\nGross returns: ₹8,00,000 – ₹30,00,000 per acre.\nNet profit: ₹5,00,000 – ₹25,00,000 per acre based on market rates and management practices."
+},
+{
+  "crop": "jujube",
+  "short_note": "Jujube, also known as Indian plum, is a hardy fruit tree that grows well in subtropical and tropical climates.\nIt thrives in well-drained loamy or sandy soils with a pH range of 6.0–7.5 and a temperature range of 20–35°C.",
+  "land_preparation": "Plow the land 2–3 times to achieve fine tilth and apply well-decomposed organic manure (10–12 tons/acre).\nSpacing: 3–4 meters between trees and 3 meters between rows.\nIdeal planting time: February–March or August–September.",
+  "irrigation": "Jujube is a drought-tolerant crop but requires regular irrigation during fruiting to ensure good yield.\nDrip irrigation is recommended to maintain moisture at the root zone without waterlogging.",
+  "fertilization": "Apply NPK (100:50:100 g/tree) as a basal dose.\nTop-dress with nitrogen (30–40 g/tree) during the growing season for better growth and fruiting.\nMicronutrients like Boron are essential for improving fruit set and quality.",
+  "pests_diseases": "Pests: Fruit flies, aphids – controlled by using neem oil or organic insecticides.\nDiseases: Leaf spot, rust – managed with fungicides and ensuring proper orchard sanitation.",
+  "investment": "Low to moderate investment for land preparation and irrigation.\nFirst harvest occurs 2–3 years after planting, with continuous harvesting after that.\nDuration: 2–3 years for initial fruiting, continuous yield thereafter.",
+  "yield": "Yield: 6–10 tons per acre, depending on variety, tree age, and management practices.",
+  "profit": "Average price: ₹20 – ₹50 per kg depending on variety and market.\nGross returns: ₹1,20,000 – ₹5,00,000 per acre.\nNet profit: ₹80,000 – ₹4,00,000 per acre depending on market rates and practices."
+},
+{
+  "crop": "amla",
+  "short_note": "Amla, or Indian Gooseberry, is a hardy fruit that thrives in tropical and subtropical climates with temperatures between 25–35°C.\nIt requires well-drained, sandy or loamy soils with a pH of 6.0–7.5.",
+  "land_preparation": "Plow the land 2–3 times to break clods and achieve fine tilth.\nIncorporate organic manure (8–10 tons/acre) during the final plowing.\nSpacing: 4–5 meters between trees and 3 meters between rows.\nIdeal planting season: June–July or September–October.",
+  "irrigation": "Moderate irrigation is required during the growing season, especially during dry periods.\nDrip irrigation is ideal to maintain moisture at the root zone and to prevent waterlogging.",
+  "fertilization": "Apply NPK (100:50:100 g/tree) during land preparation.\nTop-dress with nitrogen (20–30 g/tree) every 3–4 months during the growing season for better growth and yield.",
+  "pests_diseases": "Pests: Fruit flies, aphids, mealybugs – controlled with organic insecticides or neem oil.\nDiseases: Leaf spot, powdery mildew – managed with fungicides and proper orchard hygiene.",
+  "investment": "Low to medium investment for land preparation, irrigation system, and maintenance.\nFirst harvest typically occurs 3–4 years after planting.\nDuration: 3–4 years for initial fruiting, continuous harvesting thereafter.",
+  "yield": "Yield: 5–10 tons per acre, depending on tree age, variety, and growing conditions.",
+  "profit": "Average price: ₹30 – ₹80 per kg depending on market conditions and quality.\nGross returns: ₹1,50,000 – ₹8,00,000 per acre.\nNet profit: ₹1,00,000 – ₹6,00,000 per acre based on management and market rates."
+},
+{
+  "crop": "dosakaya",
+  "short_note": "Dosakaya, or Indian Cucumber, is a warm-season crop that grows well in tropical and subtropical climates with temperatures ranging from 25–35°C.\nIt requires well-drained, loamy soils with a pH of 6.0–7.5 and plenty of sunlight.",
+  "land_preparation": "Plow the land 2–3 times to break up clods and achieve fine tilth.\nIncorporate well-decomposed organic manure (8–10 tons/acre) and add nitrogen-rich fertilizers for good growth.\nSpacing: 2–3 feet between plants and 4 feet between rows.\nPlanting season: February–March for optimal growth during the hot season.",
+  "irrigation": "Moderate and consistent irrigation is required to keep the soil moist, especially during flowering and fruiting.\nDrip irrigation is ideal for efficient water use and avoiding waterlogging.",
+  "fertilization": "Apply NPK (80:40:40 g/plant) during planting.\nTop-dress with nitrogen (20–30 g/plant) during the growing season for better vine and fruit development.",
+  "pests_diseases": "Pests: Aphids, whiteflies, and fruit flies – controlled by using organic insecticides like neem oil.\nDiseases: Powdery mildew, downy mildew – managed by fungicides and proper field sanitation.",
+  "investment": "Moderate investment in land preparation, irrigation system, and pest control.\nFirst harvest typically occurs 2–3 months after planting.\nDuration: 2–3 months for the first crop, with ongoing harvests as the crop matures.",
+  "yield": "Yield: 8–12 tons per acre, depending on variety, growing conditions, and management practices.",
+  "profit": "Average price: ₹20 – ₹50 per kg depending on market conditions.\nGross returns: ₹1,60,000 – ₹6,00,000 per acre.\nNet profit: ₹1,00,000 – ₹4,00,000 per acre depending on market rates and growing practices."
+},
+{
+  "crop": "leafy vegetables",
+  "short_note": "Leafy vegetables, including spinach, lettuce, mustard, and other greens, grow well in temperate and subtropical climates with temperatures ranging from 15–30°C.\nThey require well-drained, fertile soils with a pH of 6.0–7.0 and plenty of sunlight.",
+  "land_preparation": "Plow the land to a fine tilth and incorporate well-decomposed organic manure (5–8 tons/acre) before planting.\nSpacing: 6–8 inches between plants and 12–18 inches between rows.\nPlanting season: Year-round in mild climates or during the cooler months in hot climates.",
+  "irrigation": "Regular irrigation is essential to keep the soil consistently moist, especially during the growing period.\nDrip irrigation is ideal for efficient water use and to avoid over-watering.",
+  "fertilization": "Apply NPK (40:20:40 g/plant) at planting time.\nTop-dress with nitrogen (10–15 g/plant) every 3–4 weeks to encourage healthy leaf growth.",
+  "pests_diseases": "Pests: Aphids, caterpillars, and slugs – controlled by organic insecticides or hand-picking pests.\nDiseases: Downy mildew, leaf spot – managed by using fungicides and ensuring proper air circulation around plants.",
+  "investment": "Low to moderate investment for land preparation, irrigation setup, and pest management.\nFirst harvest typically occurs 4–6 weeks after planting, depending on the vegetable variety.",
+  "yield": "Yield: 10–20 tons per acre, depending on variety, growing conditions, and management practices.",
+  "profit": "Average price: ₹15 – ₹50 per kg depending on market and vegetable variety.\nGross returns: ₹1,50,000 – ₹10,00,000 per acre.\nNet profit: ₹1,00,000 – ₹8,00,000 per acre depending on market rates and management practices."
+},
+{
+  "crop": "drumstick",
+  "short_note": "Drumstick, also known as Moringa, is a fast-growing, drought-tolerant tree that thrives in tropical and subtropical climates with temperatures between 25–35°C.\nIt prefers well-drained sandy or loamy soils with a pH of 6.0–7.5.",
+  "land_preparation": "Prepare the land by plowing and leveling to ensure good drainage.\nIncorporate organic manure (5–8 tons/acre) into the soil before planting.\nSpacing: 4–5 meters between trees and 3 meters between rows.\nIdeal planting time: March–April or June–July.",
+  "irrigation": "Drumstick is drought-tolerant but requires regular irrigation during the first 3–6 months of planting.\nDrip irrigation is ideal to conserve water and avoid waterlogging around the roots.",
+  "fertilization": "Apply NPK (100:50:100 g/tree) during land preparation.\nTop-dress with nitrogen (20–30 g/tree) every 6 months to promote healthy growth and pod production.",
+  "pests_diseases": "Pests: Aphids, mealybugs, and caterpillars – controlled by organic insecticides like neem oil.\nDiseases: Leaf spot, root rot – treated with fungicides and ensuring good drainage.",
+  "investment": "Moderate investment for land preparation, irrigation, and initial care.\nFirst harvest begins 6–8 months after planting for leaves, and 1–2 years for pods.\nDuration: Ongoing yield after the initial few years.",
+  "yield": "Yield: 8–12 tons per acre, depending on tree age, variety, and management practices.",
+  "profit": "Average price: ₹40 – ₹150 per kg depending on the market and quality.\nGross returns: ₹3,20,000 – ₹18,00,000 per acre.\nNet profit: ₹2,00,000 – ₹12,00,000 per acre based on market rates and growing conditions."
+},
+{
+  "crop": "beera",
+  "short_note": "Beera, also known as Ber or Indian Jujube, is a hardy fruit tree that thrives in tropical and subtropical climates with temperatures ranging from 25–40°C.\nIt prefers well-drained, sandy or loamy soils with a pH of 6.0–7.5.",
+  "land_preparation": "Plow the land 2–3 times to achieve fine tilth and incorporate organic manure (8–10 tons/acre) during final plowing.\nSpacing: 4–5 meters between trees and 3–4 meters between rows.\nPlanting season: June–July or September–October, depending on region.",
+  "irrigation": "Beera is drought-tolerant but requires regular watering during the initial stages of growth.\nIrrigate moderately during dry periods, especially during fruiting and flowering.\nDrip irrigation is recommended for water efficiency.",
+  "fertilization": "Apply NPK (100:50:100 g/tree) during planting.\nTop-dress with nitrogen (20–30 g/tree) every 3–4 months for better growth and fruit yield.",
+  "pests_diseases": "Pests: Aphids, fruit flies, and mealybugs – controlled using organic insecticides or neem oil.\nDiseases: Leaf spot, stem rot – managed with fungicides and proper field hygiene.",
+  "investment": "Moderate investment in land preparation, irrigation, and pest control.\nFirst harvest occurs 2–3 years after planting.\nDuration: Continuous fruiting after the first 2–3 years.",
+  "yield": "Yield: 8–12 tons per acre, depending on tree age, variety, and management practices.",
+  "profit": "Average price: ₹20 – ₹50 per kg depending on the market and quality.\nGross returns: ₹1,60,000 – ₹6,00,000 per acre.\nNet profit: ₹1,00,000 – ₹4,00,000 per acre based on market conditions and management practices."
+},
+{
+  "crop": "radish",
+  "short_note": "Radish is a fast-growing root vegetable that thrives in cool climates with temperatures between 15–25°C.\nIt requires well-drained, loamy soils with a pH of 6.0–7.0 for optimal growth.",
+  "land_preparation": "Plow the land to a fine tilth and incorporate well-decomposed organic manure (5–8 tons/acre) for improved fertility.\nSpacing: 2–4 inches between plants and 12–18 inches between rows.\nIdeal planting season: October–February in cooler climates.",
+  "irrigation": "Radishes require moderate and consistent irrigation to keep the soil moist, especially during germination and early growth stages.\nDrip irrigation is ideal for efficient water usage and preventing waterlogging.",
+  "fertilization": "Apply NPK (30:20:20 g/plant) during land preparation.\nTop-dress with nitrogen (10–15 g/plant) during the growing season for better root development.",
+  "pests_diseases": "Pests: Root maggots, aphids, and flea beetles – controlled by using organic insecticides like neem oil.\nDiseases: Downy mildew, black rot – managed through crop rotation and proper field sanitation.",
+  "investment": "Low to moderate investment in land preparation and irrigation system.\nFirst harvest occurs 1–2 months after planting, depending on variety and climate.",
+  "yield": "Yield: 5–10 tons per acre, depending on variety, growing conditions, and management practices.",
+  "profit": "Average price: ₹20 – ₹60 per kg depending on market conditions and quality.\nGross returns: ₹1,00,000 – ₹6,00,000 per acre.\nNet profit: ₹70,000 – ₹4,50,000 per acre depending on market rates and management practices."
+},
+{
+  "crop": "beetroot",
+  "short_note": "Beetroot is a cool-season root vegetable that thrives in temperate climates with temperatures between 15–20°C.\nIt requires well-drained, loamy soils with a pH of 6.0–7.0 for optimal growth.",
+  "land_preparation": "Plow the land to a fine tilth and incorporate well-decomposed organic manure (6–8 tons/acre) for improved fertility.\nSpacing: 3–4 inches between plants and 12–18 inches between rows.\nIdeal planting season: September–November in cooler regions.",
+  "irrigation": "Beetroot requires consistent irrigation to maintain moisture, especially during root development.\nDrip irrigation is ideal for efficient water use and avoiding waterlogging around the roots.",
+  "fertilization": "Apply NPK (60:40:40 g/plant) during planting.\nTop-dress with nitrogen (20–30 g/plant) during the growing season for better root and leaf development.",
+  "pests_diseases": "Pests: Aphids, leaf miners, and root maggots – controlled using organic insecticides like neem oil.\nDiseases: Downy mildew, rust, and beet root rot – managed with fungicides and crop rotation.",
+  "investment": "Moderate investment in land preparation, irrigation, and pest management.\nFirst harvest typically occurs 2–3 months after planting, depending on variety and growing conditions.",
+  "yield": "Yield: 10–15 tons per acre, depending on variety, soil fertility, and management practices.",
+  "profit": "Average price: ₹30 – ₹80 per kg depending on market conditions and quality.\nGross returns: ₹3,00,000 – ₹12,00,000 per acre.\nNet profit: ₹2,00,000 – ₹8,00,000 per acre based on market rates and management practices."
+}
+]

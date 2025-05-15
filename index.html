@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriPlanner Pro - Advanced Crop Management Solution</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: #fff;
+            padding: 0.8rem 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .logo {
+            color: #246355;
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #246355;
+        }
+        
+        .login-section {
+            display: flex;
+            align-items: center;
+        }
+        
+        .btn-login {
+            background-color: #246355;
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 3px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn-login:hover {
+            background-color: #1a4d42;
+        }
+        
+        .btn-signup {
+            color: #246355;
+            padding: 0.6rem 1.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            margin-right: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-signup:hover {
+            color: #1a4d42;
+        }
+        
+        /* Mobile menu toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+        }
+        
+        .mobile-menu-toggle span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: #246355;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu {
+            position: fixed;
+            top: 4rem;
+            left: 0;
+            right: 0;
+            background-color: white;
+            padding: 1rem 0;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .mobile-menu.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .mobile-menu ul {
+            list-style: none;
+        }
+        
+        .mobile-menu li {
+            padding: 0.8rem 7%;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .mobile-menu a {
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+        
+        .mobile-menu .mobile-login-buttons {
+            display: flex;
+            padding: 1rem 7%;
+            gap: 1rem;
+        }
+        
+        .mobile-login-buttons a {
+            flex: 1;
+            text-align: center;
+            padding: 0.8rem 0;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        
+        .mobile-btn-login {
+            background-color: #246355;
+            color: white !important;
+        }
+        
+        .mobile-btn-signup {
+            border: 1px solid #246355;
+            color: #246355 !important;
+        }
+        
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/api/placeholder/1200/800') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+            padding: 0 7%;
+            margin-top: 4rem;
+        }
+        
+        .hero-content {
+            max-width: 600px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background-color: #246355;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #1a4d42;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .features {
+            padding: 5rem 7%;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            color: #333;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #246355;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        
+        .feature-card {
+            padding: 2rem 1.5rem;
+            border-radius: 5px;
+            text-align: left;
+            transition: transform 0.3s ease;
+            border-bottom: 3px solid #eee;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-bottom-color: #246355;
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            color: #246355;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .about-section {
+            padding: 5rem 7%;
+            background-color: #f9f9f9;
+        }
+        
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4rem;
+        }
+        
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-content h2 {
+            margin-bottom: 1.5rem;
+            color: #333;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .about-content h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #246355;
+        }
+        
+        .about-content p {
+            margin-bottom: 1.5rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            background: url('input.jpg') center/cover no-repeat;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .testimonials {
+            padding: 5rem 7%;
+            background-color: white;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #ddd url('/api/placeholder/60/60') center/cover;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .testimonial-meta h4 {
+            margin-bottom: 0.3rem;
+            color: #333;
+        }
+        
+        .testimonial-meta p {
+            color: #246355;
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-text {
+            color: #555;
+            line-height: 1.8;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-rating {
+            color: #f0b929;
+            font-size: 1.2rem;
+        }
+        
+        .cta-section {
+            padding: 4rem 7%;
+            background-color: #246355;
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+        }
+        
+        .cta-section p {
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        
+        .btn-white {
+            background-color: white;
+            color: #246355;
+            font-weight: 600;
+        }
+        
+        .btn-white:hover {
+            background-color: #f0f0f0;
+        }
+        
+        footer {
+            background-color: #1c1c1c;
+            color: #aaa;
+            padding: 4rem 7% 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+        }
+        
+        /* Mobile Responsive Styles */
+        @media (max-width: 992px) {
+            .hero {
+                align-items: center;
+                text-align: center;
+                height: auto;
+                min-height: 90vh;
+                padding-top: 6rem;
+                padding-bottom: 4rem;
+            }
+            
+            .hero-content {
+                max-width: 100%;
+              
+            }
+            
+            .about-image {
+                order: -1;
+                width: 100%;
+            }
+            
+            .section-title {
+                margin-bottom: 2.5rem;
+            }
+            
+            .features-grid, .testimonial-grid {
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 0.8rem 5%;
+            }
+            
+            .nav-links, .login-section {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .hero {
+                padding: 0 5%;
+                padding-top: 6rem;
+                padding-bottom: 4rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .features, .about-section, .testimonials, .cta-section {
+                padding: 3rem 5%;
+            }
+            
+            .feature-card {
+                padding: 1.5rem 1rem;
+            }
+            
+            .testimonial-card {
+                padding: 1.5rem;
+            }
+            
+            .cta-section h2 {
+                font-size: 1.8rem;
+            }
+            
+            footer {
+                padding: 3rem 5% 1.5rem;
+            }
+            
+            .footer-content {
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.2rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .feature-card, .testimonial-card {
+                padding: 1.25rem 1rem;
+            }
+            
+            .about-image {
+                height: 300px;
+            }
+            
+            .testimonial-avatar {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .cta-section h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">🌿</span>
+            AI- Driven Crop Planner
+        </div>
+        <ul class="nav-links">
+            <li><a href="#features">Solutions</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li style="position: relative;">
+                <a href="#" id="contactLink">Contact</a>
+                <div id="contactDropdown" style="
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+                    border-radius: 8px;
+                    padding: 16px;
+                    z-index: 9999;
+                    min-width: 260px;
+                    font-size: 0.95rem;
+                ">
+                  <p><strong>Phone:</strong> +91 1234567890</p>
+                  <p><strong>Email:</strong> <a href="mailto:aicroplanner1@gmail.com">aicroplanner1@gmail.com</a></p>
+                </div>
+              </li>
+              
+
+              
+        </ul>
+        <div class="login-section">
+            <a href="login.html" class="btn-login">Login / sign up</a>
+        </div>
+        
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#features">Solutions</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonials">Case Studies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-login-buttons">
+            <a href="#signup" class="mobile-btn-signup">Sign Up</a>
+            <a href="#login" class="mobile-btn-login">Login</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('image1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="hero-content">
+            <h1>Precision Agriculture for Modern Farmers</h1>
+            <p>crop Planner  delivers advanced crop management solutions designed to maximize yield potential while optimizing resource allocation for sustainable farming operations.</p>
+            <div class="cta-buttons">
+                <a href="input.html" class="btn btn-primary">crop recommendations</a>
+                <li><a href="chatbot.html" target="_blank" class="btn btn-secondary">Chatbot</a>
+                </li>
+
+                
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2 class="section-title">Comprehensive Solutions</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Data-Driven Planning</h3>
+                <p>Leverage historical yield data, soil analysis, and local climate patterns to develop optimized planting schedules tailored to your specific conditions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚙️</div>
+                <h3>Resource Optimization</h3>
+                <p>Minimize input costs while maximizing output through precise irrigation scheduling, nutrient management, and pest control forecasting.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile Integration</h3>
+                <p>Access your complete farm management system from anywhere with our secure cloud-based platform and mobile application.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Financial Projections</h3>
+                <p>Generate detailed financial forecasts based on current market conditions, input costs, and projected yields to maximize profitability.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3>Advanced Crop Rotation</h3>
+                <p>Implement science-based rotation strategies to maintain soil health and fertility while reducing pest and disease pressure.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📑</div>
+                <h3>Compliance Management</h3>
+                <p>Simplify regulatory compliance with automated record-keeping and reporting tools designed for agricultural operations.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About AI-Driven Crop Planner</h2>
+                <p>AI-Driven crop planner helps in finding the best suitable crops. The crop planner was developed to bridge the gap between traditional agricultural practices and modern technology.</p>
+                <p>Our application helps sustainable agriculture by providing the knowledge about the crops.</p>
+                <p>Through continuous innovation and a deep understanding of agricultural systems, we're committed to advancing the industry and supporting the farmers who feed our world.</p>
+            </div>
+            <div class="about-image">
+  			<img src="about.jpeg" alt="About Crop Planner" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
+	    </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title">Client Success Stories</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar"></div>
+                    <div class="testimonial-meta">
+                        <h4>Robert Winters</h4>
+                        <p>Commercial Grain Producer</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"AgriPlanner Pro's forecasting tools have transformed our decision-making process. We've increased our operation's efficiency by 22% while reducing input costs by nearly 15% year-over-year."</p>
+                <div class="testimonial-rating">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar"></div>
+                    <div class="testimonial-meta">
+                        <h4>Elaine Mendoza</h4>
+                        <p>Vineyard Manager</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"The precision irrigation planning has been invaluable for our vineyard. We've been able to maintain optimal soil moisture levels throughout the growing season, even during drought conditions."</p>
+                <div class="testimonial-rating">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar"></div>
+                    <div class="testimonial-meta">
+                        <h4>James Thompson</h4>
+                        <p>Diversified Crop Farm</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Managing multiple crop types used to be incredibly complex until we implemented AgriPlanner Pro. Now all our planning, tracking, and analysis happens in one system, saving us countless hours."</p>
+                <div class="testimonial-rating">★★★★★</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Ready to Optimize Your Agricultural Operation?</h2>
+        <p>Join thousands of successful farmers who have transformed their operations with AgriPlanner Pro. Schedule a personalized demonstration with our agricultural technology specialists today.</p>
+        <a href="#contact" class="btn btn-white">Schedule Consultation</a>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>AgriPlanner Pro</h3>
+                <p>Advanced agricultural planning and management solutions for the modern farm operation.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Solutions</h3>
+                <ul class="footer-links">
+                    <li><a href="#planning">Crop Planning</a></li>
+                    <li><a href="#resources">Resource Management</a></li>
+                    <li><a href="#forecasting">Yield Forecasting</a></li>
+                    <li><a href="#financial">Financial Analysis</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#webinars">Webinars</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AgriPlanner Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+    
+            const toggleBtn = document.querySelector('.mobile-menu-toggle');
+            const spans = toggleBtn.querySelectorAll('span');
+    
+            if (mobileMenu.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(7px, -7px)';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        }
+    
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.remove('active');
+                const spans = document.querySelector('.mobile-menu-toggle').querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            });
+        });
+    
+        
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const contactLink = document.getElementById('contactLink');
+          const dropdown = document.getElementById('contactDropdown');
+      
+          contactLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+          });
+      
+          // Close if clicking outside
+          document.addEventListener('click', function (e) {
+            if (!dropdown.contains(e.target) && e.target !== contactLink) {
+              dropdown.style.display = 'none';
+            }
+          });
+        });
+      </script>
+      
+    <!-- Chat Window -->
+<div id="chatWindow" style="display:none; position:fixed; bottom:80px; right:20px; width:300px; background:#fff; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.3); padding:10px; z-index:9999;">
+    <div id="chatLog" style="height:200px; overflow-y:auto; margin-bottom:10px;"></div>
+    <input type="text" id="chatInput" placeholder="Type your message..." style="width:100%; padding:8px;">
+    <button onclick="sendMessage()" style="width:100%; margin-top:5px;">Send</button>
+  </div>
+  <script>
+    function toggleChat() {
+        const chatWindow = document.getElementById('chatWindow');
+        chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
+    }
+    
+    function sendMessage() {
+        const input = document.getElementById('chatInput');
+        const chatLog = document.getElementById('chatLog');
+        const message = input.value.trim();
+    
+        if (message === "") return;
+    
+        chatLog.innerHTML += `<p><strong>You:</strong> ${message}</p>`;
+        input.value = "";
+    
+        fetch('http://127.0.0.1:5000/api', {
+
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message })
+        })
+        .then(res => res.json())
+        .then(data => {
+            chatLog.innerHTML += `<p><strong>Bot:</strong> ${data.reply}</p>`;
+            chatLog.scrollTop = chatLog.scrollHeight;
+        })
+        .catch(err => {
+            chatLog.innerHTML += `<p style="color:red;">Error: ${err.message}</p>`;
+        });
+    }
+    </script>
+      
+
+        
+    
+   
+
+</body>
+</html>
